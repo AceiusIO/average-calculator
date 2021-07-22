@@ -1,4 +1,4 @@
 appId: us.acei.average-calculator
-publish:
-  provider: github
-  token: $AVGCALCTOKEN
+#publish:
+  #provider: github
+  #token: $AVGCALCTOKEN
