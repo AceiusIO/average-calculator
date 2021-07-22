@@ -1,0 +1,25 @@
+{
+  "name": "average-calculator",
+  "version": "1.0.0",
+  "description": "Calculates the average of some numbers",
+  "main": "app.js",
+  "scripts": {
+    "test": "electron .",
+    "build": "electron-builder build --win --linux --publish never",
+    "deploy": "electron-builder build --win --linux --publish always"
+  },
+  "author": "AceiusIO",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9",
+    "spray-print": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AceiusIO/average-calculator.git"
+  }
+}

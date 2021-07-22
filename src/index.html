@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Average Calculator</title>
+  <style>
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background-color: #eaeaea;
+        text-align: center;
+    }
+
+    #notification {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .hidden {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <h1>Average Calculator</h1>
+    <section>
+        <h3>Enter in list format:</h3>
+        <p><i>Example: 1,2,3</i></p>
+        <input id="avg-input" type="text"></input>
+        <button onclick="main()">Average</button>
+        <h3 id="avg-output"></h3>
+    </section>
+
+    <div id="notification" class="hidden">
+        <p id="message"></p>
+        <button id="close-button" onClick="closeNotification()">
+            Close
+        </button>
+        <button id="restart-button" onClick="restartApp()" class="hidden">
+            Restart
+        </button>
+    </div>
+
+    <p id="version"></p>
+
+    <script src="main.js"></script>
+</body>
