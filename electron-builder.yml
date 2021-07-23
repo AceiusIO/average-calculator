@@ -1,4 +1,5 @@
 appId: us.acei.average-calculator
+target: list of AppImage, snap, deb, rpm, zip
 #publish:
   #provider: github
   #token: $AVGCALCTOKEN

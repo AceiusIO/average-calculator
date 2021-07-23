@@ -1,12 +1,12 @@
 {
   "name": "average-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculates the average of some numbers",
   "main": "app.js",
   "scripts": {
     "test": "electron .",
-    "build": "electron-builder build --win --linux --publish never",
-    "deploy": "electron-builder build --win --linux --publish always"
+    "build": "electron-builder build -lw --publish never",
+    "deploy": "electron-builder build -lw --publish always"
   },
   "author": "AceiusIO",
   "license": "GPL-3.0",

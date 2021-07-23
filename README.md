@@ -7,12 +7,13 @@
 ## 💻 Installing
 Heres some options:
 ### Windows
- - Coming soon
+ - [Zip]() (Sorry windows users)
 ### Mac
  - Not coming soon unless I get an apple developer licence
 ### Linux
- - [AppImage](COMING VERY SOON)
- - the snap store maybe?
+ - [AppImage]()
+ - [Debian]()
+ - [RedHat]()
 
 Requires a 64x/amd processor.
 
@@ -35,7 +36,7 @@ npm test
 ```bash
 npm run build
 ```
-This will output an AppImage and a snap file (for [snapcraft](https://snapcraft.io))
+This will output an AppImage, .deb, .rpm, and a snap file (for [snapcraft](https://snapcraft.io))
 
 ## 📜 Licencing
 This project is licenced under the [GPL-V3.0](LICENCE)
