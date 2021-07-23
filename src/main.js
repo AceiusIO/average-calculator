@@ -22,13 +22,11 @@ ipcRenderer.send('app_version');
 ipcRenderer.on('app_version', (event, arg) => {
     ipcRenderer.removeAllListeners('app_version');
     print.println('average-calculator by aceiusio\nVersion ' + arg.version);
-    //version.innerText = 'Version ' + arg.version;
 });
 
 function closeNotification() {
     notification.classList.add('hidden');
 }
-
 function restartApp() {
     ipcRenderer.send('restart_app');
 }
@@ -41,15 +39,15 @@ function sum(numbers) {
 }
 
 function avg(iarray) {
-    //let array = JSON.parse("[" + iarray + "]");
     let array = iarray.split(",").map(Number);
+    let average;
     
     print.cprint('There are ' + array.length + ' entries to average');
     print.cprint('Sum of array returned ' + sum(array));
     print.cprint('Length of array returned ' + array.length);
-    print.cprint('Average or inputted array is ' + sum(array) / array.length);
-    //alert('Average of inputted array is ' + sum(iarray) / entries)
-    return sum(array) / array.length;
+    average = sum(array) / array.length
+    print.cprint('Average of inputted array is ' + average);
+    return average;
 }
 
 function main() {

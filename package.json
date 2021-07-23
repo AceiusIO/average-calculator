@@ -1,6 +1,6 @@
 {
   "name": "average-calculator",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Calculates the average of some numbers",
   "main": "app.js",
   "scripts": {
